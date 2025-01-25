@@ -25,3 +25,24 @@ Define the logic and formulas for how each factor affects the premium.
 - Code/Spreadsheet Quality: Formatting, use of formulas, functions, or Python code with appropriate comments.
 - Creativity: Consideration of additional factors, assumptions, or potential improvements.
 - Whiteboarding, presentation, Q&A: after assignment completed
+
+
+
+-----
+
+Company insures 10 people
+
+premiums must cover payouts
+
+payouts are a f(cost of claim, # of claims)
+
+premiums can be weighted so riskier driver/car combinations pay more, to discount safer combos
+
+num of claims is integral(chance of claim, time)
+
+chance of claim can be weighted by columns
+
+cost of claim can be weighted by columns
+
+the bitter lesson - scaled compute is more powerful than human insight
+
