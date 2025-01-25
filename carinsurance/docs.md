@@ -41,19 +41,13 @@ premiums can be weighted so riskier driver/car combinations pay more, to discoun
 
 
 num of claims is integral(chance of claim, time)
-
-chance of claim can be weighted by columns
-
-cost of claim can be weighted by columns
+- chance of claim can be weighted by columns
+- cost of claim can be weighted by columns
 
 the bitter lesson - scaled compute is more powerful than human insight
-
-miles -1> wrecks -2> fires
-
-First arrow is based on the driver, second is weighted on the car
 
 If we have a dataset "claims" that includes the props at time of a claim, then we can use it to train a NN to predict the cost of a claim for a given propset
 
 We can also train a NN to predict the likelyhood of claim for a given propset
 
-And weight premium as f(cost*chance)
+Then the expected cost of a driver is integral[f(cost*chance)]*dt
