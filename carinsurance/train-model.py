@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+# pip3 install scikit-learn
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.model_selection import train_test_split
 import tensorflow as tf
