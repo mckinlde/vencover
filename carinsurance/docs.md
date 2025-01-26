@@ -28,7 +28,7 @@ Define the logic and formulas for how each factor affects the premium.
 
 
 
------
+# -----
 
 Company insures 10 people
 
@@ -53,10 +53,21 @@ We can also train a NN to predict the likelyhood of claim for a given propset
 Then the expected cost of a driver is integral[f(cost*chance)]*dt
 
 
------
+# -----
 
 With above notes, I've decided to create some fake data in a 'claims' table and use it to train NN's.
 
 Before doing that, I used the instructions to prompt chatGPT for a zero-shot solution; chatGPT came up with the same kind of math/human-insight approach that I convinced myself misses 'the bitter lesson' above.
 
 Cest la vie, time to train a model.
+
+
+# -----
+
+First I generate a table of fake claims; it's just the normal customer data, plus these 3 cols:
+
+claim-cost: cost of claim in $; range 0-1mil
+claim-date: date that claim occurred
+policy-age: age of policy when claim occurred
+
+I'm imagining rows in this table as discrete moments in time, and I want to be able to predict their values based on props of a prospective customer.
