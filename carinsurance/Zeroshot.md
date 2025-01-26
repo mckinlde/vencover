@@ -64,3 +64,7 @@ Output:
 
 The initial version of the car insurance underwriting model has been created. It reads the sample data, calculates premiums based on various risk factors, and determines policy eligibility. Let me know if you'd like any modifications or explanations of the logic.
 ```
+
+My reflection:
+
+looks like chatGPT's zeroshot is a math-based solution, and IMO misses 'the bitter lesson'

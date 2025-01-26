@@ -1,3 +1,26 @@
+# looks like chatGPT's zeroshot is a math-based solution, and IMO misses 'the bitter lesson'
+
+# oh well, here's a command line output anyways:
+'''
+douglasmckinley@Douglass-MacBook-Pro vencover % /Users/douglasmckinley/VSCodeProjects/vencover/.venv/bin/python /Users/douglasmckinl
+ey/VSCodeProjects/vencover/carinsurance/ci-model-gpt.py
+     Customer ID  Premium Eligibility
+0              1     1400    Eligible
+1              2      500    Eligible
+2              3     1450    Eligible
+3              4      100    Eligible
+4              5      750    Eligible
+..           ...      ...         ...
+495          496      400    Eligible
+496          497     1300    Eligible
+497          498      900    Eligible
+498          499     1100    Eligible
+499          500     1500    Eligible
+
+[500 rows x 3 columns]
+douglasmckinley@Douglass-MacBook-Pro vencover % 
+'''
+
 import pandas as pd
 
 def calculate_premium(row):
@@ -57,7 +80,7 @@ def determine_policy_eligibility(row):
     return 'Eligible'
 
 # Read sample data
-data = pd.read_csv('data_inputs.csv')
+data = pd.read_csv('carinsurance/Untitled spreadsheet - data inputs.csv')
 
 data['Premium'] = data.apply(calculate_premium, axis=1)
 data['Eligibility'] = data.apply(determine_policy_eligibility, axis=1)
