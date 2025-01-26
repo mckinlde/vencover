@@ -30,7 +30,7 @@ data['policy-age'] = [random.randint(1, 12) for _ in range(len(data))]
 
 
 # Save the updated data to a new file
-updated_file_path = 'data_inputs_updated.csv'
+updated_file_path = 'claims.csv'
 data.to_csv(updated_file_path, index=False)
 
 print("Updated file saved as:", updated_file_path)
