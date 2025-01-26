@@ -1,6 +1,6 @@
 prompt:
 
-'''
+```
 ** Objective: Develop a simple underwriting model for car insurance that determines whether the customer should get a policy, and if so, the premium amount given their rish profile. The model can be built using either a spreadsheet, in python, or whatever language you prefer.
 
 ** Background: Underwriting in car insurance involves assessing the risk associated with insuring a driver and their vehicle. Factors that typically affect car insurance premiums include the driver's age, credit score, job title, driving history, type of vehicle, location, vehicle telematics, and other relevant variables. This assignment will require you to develop a model that calculates the insurance premium for different customers based on these factors.
@@ -36,9 +36,31 @@ Customer ID	Age	Gender	Employment (Years)	Accidents (Last 5 Years)	Vehicle Age (
 8	40	Female	18	0	4	SUV	ICE	9000	Rural				
 9	29	Male	5	1	6	Sedan	EV	14000	Suburban				
 10	55	Female	35	0	2	Sedan	EV	6000	Urban				
-'''
+```
 
 Output:
 
-'''
-'''
+```
+Let's develop the car insurance underwriting model in Python. I'll create a script that:
+
+1. Reads the sample data from a CSV file.
+2. Defines base premiums and adjustment rules based on risk factors.
+3. Calculates the final premium for each customer.
+4. Determines whether the customer qualifies for a policy based on risk assessment.
+
+Would you like me to proceed with the implementation?
+```
+
+Input:
+
+```
+Yes
+```
+
+Output:
+
+```
+'ci-model-gpt.py'
+
+The initial version of the car insurance underwriting model has been created. It reads the sample data, calculates premiums based on various risk factors, and determines policy eligibility. Let me know if you'd like any modifications or explanations of the logic.
+```
