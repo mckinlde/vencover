@@ -6,6 +6,7 @@ from sklearn.model_selection import train_test_split
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
+# conda create -n vencoverenv python=3.4 numpy scipy scikit-learn tensorflow
 
 # Load datasets
 customers = pd.read_csv('carinsurance/Untitled spreadsheet - data inputs.csv')
