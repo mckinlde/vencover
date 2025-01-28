@@ -71,3 +71,7 @@ claim-date: date that claim occurred
 policy-age: age of policy when claim occurred
 
 I'm imagining rows in this table as discrete moments in time, and I want to be able to predict their values based on props of a prospective customer.
+
+# -----
+
+My week is getting pretty busy, here's the link for 'the bitter lesson' just in case you haven't seen it: http://www.incompleteideas.net/IncIdeas/BitterLesson.html
