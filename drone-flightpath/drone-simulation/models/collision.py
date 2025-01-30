@@ -2,6 +2,8 @@
 
 # Efficiently detect collisions using spatial algorithms (like KD-Trees or Octrees).
 
+from scipy.spatial import KDTree
+
 class CollisionDetector:
     def detect_collisions(self, drones):
         positions = [drone.get_position() for drone in drones if drone.active]
