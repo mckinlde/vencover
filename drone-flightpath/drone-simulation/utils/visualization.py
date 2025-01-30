@@ -10,11 +10,15 @@ class Visualization:
         fig = plt.figure()
         ax = fig.add_subplot(111, projection='3d')
 
+        # Track if labels were added
+        has_labels = False
+
         # Plot drones
         for drone in drones:
             if drone.active:
                 pos = drone.get_position()
                 ax.scatter(pos[0], pos[1], pos[2], label=drone.name)
+                has_labels = True
 
         # Plot collisions
         for collision in collisions:
@@ -24,13 +28,13 @@ class Visualization:
                    all(isinstance(coord, (int, float)) for coord in pos2):
                     ax.scatter(pos1[0], pos1[1], pos1[2], color='red', marker='x', s=100)
                     ax.scatter(pos2[0], pos2[1], pos2[2], color='red', marker='x', s=100)
-                else:
-                    print(f"Warning: Skipping invalid collision data {collision}")
-            else:
-                print(f"Warning: Unexpected collision format {collision}")
 
         ax.set_xlabel('X')
         ax.set_ylabel('Y')
         ax.set_zlabel('Z')
-        ax.legend()
+
+        # Only show legend if drones were plotted
+        if has_labels:
+            ax.legend()
+
         plt.show()
