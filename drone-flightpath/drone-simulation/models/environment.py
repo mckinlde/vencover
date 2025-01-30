@@ -2,6 +2,9 @@
 
 # Handles the setup of cities, including weather, buildings, and population density.
 
+import pandas as pd
+
+
 class Environment:
     def __init__(self, city_name, dimensions, building_density, weather, population_density, takeoff_locations):
         self.city_name = city_name
