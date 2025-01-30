@@ -1,8 +1,8 @@
 {
     "city_name": "Metroville",
     "num_drones": 10,
-    "simulation_time": 300,
-    "time_step": 1,
+    "simulation_time": 30,
+    "time_step": 5,
     "random_flight_paths": true,
     "weather_effects": false,
     "output_report": "simulation_report.csv"
