@@ -6,6 +6,9 @@
 # Damage assessment based on collisions.
 
 
+import csv
+
+
 class FileIO:
     @staticmethod
     def load_csv(file_path):
