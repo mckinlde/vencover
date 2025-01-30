@@ -69,10 +69,16 @@ Timestamps of when collisions occurred.
 Drone pairs involved in each collision.
 If you'd like, I can further analyze the results, optimize the simulation, or refine specific behaviors (e.g., collision avoidance, dynamic flight path adjustments). Let me know what you'd like to improve next! 🚀
 
-# Prompt _
-Me: _
+# Prompt 13:
+Me: Can you show me how to run it on my local copy?
 
-GPT: _ 
+GPT: ...
+
+Terminal: (.venv) douglasmckinley@Douglass-MBP drone-simulation % python main.py
+...
+a series of import fixes
+...
+ValueError: data must be of shape (n, m), where there aren points of dimension m
 
 # Prompt _
 Me: _
