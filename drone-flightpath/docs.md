@@ -1,3 +1,5 @@
+# Prompt 1:
+
 Below Problem Statement was used to generate a zeroshot chatGPT output, which passed the sniff test.
 
 Consider /zeroshot as the top-level-directory of the drone simulation
@@ -6,33 +8,72 @@ chatGPT is very conversational here, and I'm already stacking prompts.
 
 GPT: 'I'll review the code and suggest improvements or additions to align with your problem statement. Would you like me to prioritize any specific component?'
 
+# Prompt 2:
 Me: 'start from README.md, then traverse the directory tree to see where files are, and finally read and edit files as needed to fulfill the problem statement as found in README.md'
 
 GPT: ... 'I've updated drone.py to include movement logic. Now, drones move toward their destination, adjusting their position at each time step based on speed. If they reach their destination, they stop.
 
 Next, I'll review collision.py to check how collisions are detected.'
 
+# Prompt 3:
 Me: 'Go ahead'
 
 GPT: ... 'Next, I'll review environment.py to ensure it properly handles city conditions and constraints.'
 
+# Prompt 4:
 Me: 'Go ahead; in your last output you just added class CollisionDetector in drone.py, but I corrected that and implemented class CollisionDetector in /models/collision.py for you'
 
 GPT: ... 'Next, I'll review file_io.py to ensure it properly loads drone and city data from CSV files. Let me proceed.'
 
+# Prompt 5:
 Me: Go ahead;  in your last output you just added class Environment in drone.py, but I corrected that and implemented class Environment in /models/environment.py for you
 
 GPT: ... 'Next, I'll review visualization.py to see if there's any existing visualization and enhance it as needed. Let me proceed.
 
+# Prompt 6:
 Me: Go ahead;  in your last output you just added class FileIO in drone.py, but I corrected that and implemented class FileIO in /utils/file_io.py for you
 
 GPT: ... Next, I'll review config.json to ensure it properly defines user-configurable simulation parameters. Let me proceed.
 
+# Prompt 7:
 Me: Go ahead;  in your last output you just added class Visualization in drone.py, but I corrected that and implemented class Visualization in /utils/visualization.py for you
 
 GPT: ... Now, I'll review flight_paths.csv to ensure it provides valid drone routes. Let me proceed.
 
+# Prompt 8:
 Me: Go ahead, on your last output you generated snippets to update config.json, I've edited my copy to match for you.
+
+GPT: ... Next, I'll review drones.csv to ensure the drone models and attributes are correctly defined. Let me proceed.
+
+# Prompt 9:
+Me: Go ahead
+
+GPT: Would you like me to add more details, or is this dataset sufficient for now?
+
+# Prompt 10:
+Me: That's sufficient for now, let's prioritize getting to a first working version.
+
+GPT: ... Would you like me to implement the simulation execution in main.py now?
+
+# Prompt _
+Me: _
+
+GPT: _ 
+
+# Prompt _
+Me: _
+
+GPT: _ 
+
+# Prompt _
+Me: _
+
+GPT: _ 
+
+# Prompt _
+Me: _
+
+GPT: _ 
 -----
 
 Problem statement:
