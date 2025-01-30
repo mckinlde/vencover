@@ -20,3 +20,5 @@ I was much more impressed with chatGPT's zero-shot solution, and ended up develo
 time,collision
 3,"([458.6666666666667, 658.6666666666666, 129.33333333333334], [349.5537985160413, 549.5537985160413, 106.51793283868044])"
 ```
+
+![Figure_1](https://github.com/user-attachments/assets/cbef3568-cc00-41d7-b895-3ece4df7431c)
