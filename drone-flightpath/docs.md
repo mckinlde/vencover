@@ -80,8 +80,23 @@ a series of import fixes
 ...
 ValueError: data must be of shape (n, m), where there aren points of dimension m
 
-# Prompt _
-Me: _
+# Prompt 14:
+Me: 'When I run my local copy, I get this error output:
+
+python main.py
+Traceback (most recent call last):
+  File "/Users/douglasmckinley/VSCodeProjects/vencover/drone-flightpath/drone-simulation/main.py", line 64, in <module>
+    run_simulation("config.json")
+  File "/Users/douglasmckinley/VSCodeProjects/vencover/drone-flightpath/drone-simulation/main.py", line 49, in run_simulation
+    collisions = collision_detector.detect_collisions(drones)
+  File "/Users/douglasmckinley/VSCodeProjects/vencover/drone-flightpath/drone-simulation/models/collision.py", line 10, in detect_collisions
+    tree = KDTree(positions)
+  File "/Users/douglasmckinley/VSCodeProjects/vencover/.venv/lib/python3.9/site-packages/scipy/spatial/_kdtree.py", line 360, in __init__
+    super().__init__(data, leafsize, compact_nodes, copy_data,
+  File "_ckdtree.pyx", line 560, in scipy.spatial._ckdtree.cKDTree.__init__
+ValueError: data must be of shape (n, m), where there aren points of dimension m
+(.venv) douglasmckinley@Douglass-MBP drone-simulation % 
+'
 
 GPT: _ 
 -----
