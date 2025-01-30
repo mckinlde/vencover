@@ -17,6 +17,14 @@ Me: 'Go ahead'
 GPT: ... 'Next, I'll review environment.py to ensure it properly handles city conditions and constraints.'
 
 Me: 'Go ahead; in your last output you just added class CollisionDetector in drone.py, but I corrected that and implemented class CollisionDetector in /models/collision.py for you'
+
+GPT: ... 'Next, I'll review file_io.py to ensure it properly loads drone and city data from CSV files. Let me proceed.'
+
+Me: Go ahead;  in your last output you just added class Environment in drone.py, but I corrected that and implemented class Environment in /models/environment.py for you
+
+GPT: ... 'Next, I'll review visualization.py to see if there's any existing visualization and enhance it as needed. Let me proceed.
+
+Me: Go ahead;  in your last output you just added class FileIO in drone.py, but I corrected that and implemented class FileIO in /utils/file_io.py for you
 -----
 
 Problem statement:
