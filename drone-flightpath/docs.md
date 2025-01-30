@@ -2,7 +2,17 @@ Below Problem Statement was used to generate a zeroshot chatGPT output, which pa
 
 Consider /zeroshot as the top-level-directory of the drone simulation
 
+chatGPT is very conversational here, and I'm already stacking prompts.
 
+GPT: 'I'll review the code and suggest improvements or additions to align with your problem statement. Would you like me to prioritize any specific component?'
+
+Me: 'start from README.md, then traverse the directory tree to see where files are, and finally read and edit files as needed to fulfill the problem statement as found in README.md'
+
+GPT: ... 'I've updated drone.py to include movement logic. Now, drones move toward their destination, adjusting their position at each time step based on speed. If they reach their destination, they stop.
+
+Next, I'll review collision.py to check how collisions are detected.'
+
+Me: 'Go ahead'
 -----
 
 Problem statement:

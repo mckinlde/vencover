@@ -1,6 +1,6 @@
 # Drone Class (drone.py)
 
-# Define drone behavior based on speed, position, size, and path.
+import math
 
 class Drone:
     def __init__(self, name, speed, position, size, destination):
@@ -12,7 +12,19 @@ class Drone:
         self.active = True  # Indicates if flight is ongoing
 
     def move(self, time_step):
-        # Basic movement logic (toward destination)
         if self.active:
-            # Update position logic here
-            pass
+            # Compute direction vector
+            direction = [self.destination[i] - self.position[i] for i in range(3)]
+            distance = math.sqrt(sum(d**2 for d in direction))
+
+            if distance <= self.speed * time_step:
+                # Reached destination
+                self.position = self.destination
+                self.active = False
+            else:
+                # Normalize direction and move drone
+                unit_direction = [d / distance for d in direction]
+                self.position = [self.position[i] + unit_direction[i] * self.speed * time_step for i in range(3)]
+
+    def get_position(self):
+        return self.position
