@@ -18,8 +18,15 @@ class FileIO:
 
     @staticmethod
     def write_report(file_path, data):
+        if not data:
+            print("Warning: No collisions recorded, report will be empty.")
+            with open(file_path, mode='w', newline='') as file:
+                writer = csv.writer(file)
+                writer.writerow(["time", "collision"])  # Write header only
+            return
+        
         with open(file_path, mode='w', newline='') as file:
             writer = csv.writer(file)
-            writer.writerow(data[0].keys())
+            writer.writerow(data[0].keys())  # Write headers
             for row in data:
-                writer.writerow(row.values())
+                writer.writerow(row.values())  # Write data

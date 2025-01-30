@@ -17,7 +17,7 @@ class CollisionDetector:
             neighbors = tree.query_ball_point(drone.get_position(), r=max(drone.size))
             for j in neighbors:
                 if i != j and drones[j].active:
-                    # Store position data instead of drone names
+                    # Ensure the collision log stores numeric positions
                     collisions.append((drone.get_position(), drones[j].get_position()))
                     drone.active = False
                     drones[j].active = False

@@ -33,8 +33,10 @@ class Visualization:
         ax.set_ylabel('Y')
         ax.set_zlabel('Z')
 
-        # Only show legend if drones were plotted
+        # Suppress the legend warning
         if has_labels:
             ax.legend()
+        else:
+            ax.legend().set_visible(False)  # Hide empty legend
 
         plt.show()
