@@ -13,6 +13,10 @@ GPT: ... 'I've updated drone.py to include movement logic. Now, drones move towa
 Next, I'll review collision.py to check how collisions are detected.'
 
 Me: 'Go ahead'
+
+GPT: ... 'Next, I'll review environment.py to ensure it properly handles city conditions and constraints.'
+
+Me: 'Go ahead; in your last output you just added class CollisionDetector in drone.py, but I corrected that and implemented class CollisionDetector in /models/collision.py for you'
 -----
 
 Problem statement:
