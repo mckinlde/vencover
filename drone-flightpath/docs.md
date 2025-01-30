@@ -55,15 +55,19 @@ Me: That's sufficient for now, let's prioritize getting to a first working versi
 
 GPT: ... Would you like me to implement the simulation execution in main.py now?
 
-# Prompt _
-Me: _
+# Prompt 11:
+Me: Yes please
 
-GPT: _ 
+GPT: ... Would you like me to proceed with running a test simulation?
 
-# Prompt _
-Me: _
+# Prompt 12:
+Me: Yes please
 
-GPT: _ 
+GPT: The simulation has been executed successfully! The collision report is now available, showing:
+
+Timestamps of when collisions occurred.
+Drone pairs involved in each collision.
+If you'd like, I can further analyze the results, optimize the simulation, or refine specific behaviors (e.g., collision avoidance, dynamic flight path adjustments). Let me know what you'd like to improve next! 🚀
 
 # Prompt _
 Me: _
